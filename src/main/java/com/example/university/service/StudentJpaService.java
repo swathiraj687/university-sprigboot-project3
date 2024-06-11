@@ -80,7 +80,7 @@ public class StudentJpaService implements StudentRepository {
                 if (courses.size() != courseIds.size()) {
                     throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
                 }
-                newStudent.setCourse(courses);
+                newStudent.setCourses(courses);
             }
             return studentJpaRepository.save(newStudent);
         } catch (NoSuchElementException e) {

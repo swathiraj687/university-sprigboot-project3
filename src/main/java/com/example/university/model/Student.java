@@ -65,7 +65,7 @@ public class Student {
         return courses;
     }
 
-    public void setCourse(List<Course> courses) {
+    public void setCourses(List<Course> courses) {
         this.courses = courses;
     }
 }

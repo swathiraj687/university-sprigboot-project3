@@ -85,7 +85,7 @@ public class CourseJpaService implements CourseRepository {
             if (course.getCourseName() != null) {
                 newCourse.setCourseName(course.getCourseName());
             }
-            if (course.getCredits() != null) {
+            if (course.getCredits() != 0) {
                 newCourse.setCredits(course.getCredits());
             }
 
